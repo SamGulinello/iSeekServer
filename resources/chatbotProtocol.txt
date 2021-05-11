@@ -1,0 +1,21 @@
+----THESE ARE THE CODES OUTPUTTED BY THE CHATBOT THAT CONTROL ASPECTS OF THE APP----
+----------THIS LIST IS SUBJECT TO CHANGE AS THE APP GROWS IN FUNCITONALITY----------
+
+CLIENT CODE
+METHOD                      CODES           EXAMPLE
+take a picture              %0tp            "take a picture"
+save an image               %0sp            "can you save that picture for me?"
+open camera                 %0oc            "take me to the camera screen"
+open messaging screen       %0om            "show me the messaging screen"
+read items in an image      %0ri            "tell me what's in that image"
+look for specific items     %1si            "I'm Looking for my mug"
+
+
+
+SYNTAX
+The "%" special character would never be included in a word coming back from chatbot. The number specifies
+how many times the app will have to interact with the server. Example would be looking for a specific item.
+The first interaction would include listening for the chatbot response then sending an image. The second
+interaction would be listening for a boolen value indicating if the item was included in the image. The last 
+two characters of codes is a short version of the method. Example: Take picture -> tp. All the codes are a 
+fixed length.
